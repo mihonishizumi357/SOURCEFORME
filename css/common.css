@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*----------------------------------------------------------------------------------
-	â—†åŸºæœ¬æŒ‡å®š
+	◆基本指定
 ----------------------------------------------------------------------------------*/
 body {
 	padding: 0;
@@ -24,7 +24,7 @@ body {
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	font-family: "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª",Meiryo,"ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","MS P Gothic",sans-serif;
+	font-family: "ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS P Gothic",sans-serif;
 }
 
 html, body {
@@ -161,7 +161,7 @@ hr {
 	border: none;
 	border-top: 1px solid #000;
 }
-/* ---------- è‰² ---------- */
+/* ---------- 色 ---------- */
 .black {
 	color: #000;
 }
@@ -189,7 +189,7 @@ hr {
 .lightblue {
 	color: #3fc6fc;
 }
-/* ---------- æ–‡å­— ---------- */
+/* ---------- 文字 ---------- */
 .break {
 	word-break: break-all;
 }
@@ -280,9 +280,9 @@ hr {
 	padding-left: 1em;
 	text-indent: -1em;
 }
-/* ---------- ç·š ---------- */
+/* ---------- 線 ---------- */
 
-/* ---------- åŸºæœ¬ ---------- */
+/* ---------- 基本 ---------- */
 .h_10 {
 	height: 10px;
 }
@@ -610,7 +610,7 @@ hr {
 .col8 {
 	width: 12.5%;
 }
-/* ---------- 2019/08/09 add ãƒªã‚¹ãƒˆ(æ‹¬å¼§ä»˜) ---------- */
+/* ---------- 2019/08/09 add リスト(括弧付) ---------- */
 ol.bracket {
   list-style-type: none;
   text-indent:-2em;
@@ -623,7 +623,7 @@ ol.bracket li:before {
   content: "("counter(cnt) ") ";
 }
 
-/* ---------- 2020/10/23 add ãƒªã‚¹ãƒˆ(é»’ä¸¸) ---------- */
+/* ---------- 2020/10/23 add リスト(黒丸) ---------- */
 ol.dot {
   list-style-type: none;
   text-indent:-2em;
@@ -633,7 +633,7 @@ ol.dot {
 ol.dot li:before {
   font-size: large;
   font-weight: bold;
-  content: " ãƒ» ";
+  content: " ・ ";
 }
 
 .l_h_12 {
@@ -644,7 +644,7 @@ ol.dot li:before {
 	padding-left: 1em;
 }
 
-/* ---------- ç®± ---------- */
+/* ---------- 箱 ---------- */
 .main_wrapper {
 	background: url(../img/back_base.png) repeat-y;
 }
@@ -770,7 +770,7 @@ input[type=text].pager {
 	margin: 5px 5px 5px 15px;
 	padding: 5px;
 }
-/* ---------- ã‚¨ãƒªã‚¢ ---------- */
+/* ---------- エリア ---------- */
 .town_area {
 	background: #f0f0f0 url(../img/back_town_02.png) bottom no-repeat;
 }
@@ -789,9 +789,9 @@ input[type=text].pager {
 	background:  -webkit-linear-gradient(top, transparent 55%, #ffe839 45%);
 	background: linear-gradient(transparent 55%, #ffe839 45%);
 }
-/* ---------- èƒŒæ™¯ ---------- */
+/* ---------- 背景 ---------- */
 
-/* ---------- ç”»åƒ ---------- */
+/* ---------- 画像 ---------- */
 .gray_img {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -811,7 +811,7 @@ input[type=text].pager {
 	right: 0;
 	margin: auto;
 }
-/* ---------- ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ ---------- */
+/* ---------- アニメーション ---------- */
 .footer_marquee {
 	background: url(../img/back_area_dx.png) repeat-x;
 	background-size: 480px auto;
@@ -827,8 +827,8 @@ input[type=text].pager {
 	from { background-position: 0 0; }
 	to   { background-position: -480px 0; }
 }
-/* ---------- å›ºæœ‰è¨­å®š ---------- */
-/* ---------- ãƒ˜ãƒƒãƒ€ ---------- */
+/* ---------- 固有設定 ---------- */
+/* ---------- ヘッダ ---------- */
 .logo {
 	width: 260px;
 }
@@ -850,7 +850,7 @@ input[type=text].pager {
 .menu {
 	background: #7ed3ff;
 }
-/* ---------- ãƒãƒ³ãƒãƒ¼ã‚¬ãƒ¼ãƒ¡ãƒ‹ãƒ¥ãƒ¼ ---------- */
+/* ---------- ハンバーガーメニュー ---------- */
 nav.spmenu_navigation {
 	position: fixed;
 	z-index: 100;
@@ -887,7 +887,7 @@ nav.spmenu_navigation.active {
 .spmenu_toggle.active {
 	background-image: url(../img/btn_page_menu_close.png);
 }
-/* ---------- ãƒ•ãƒƒã‚¿ ---------- */
+/* ---------- フッタ ---------- */
 footer {
 	margin: 30px 0 0 0;
 }
@@ -907,7 +907,7 @@ footer {
 	border-radius: 5px;
 	color: #fff;
 }
-/* ---------- ãƒ•ãƒ­ãƒ¼ãƒ†ã‚£ãƒ³ã‚° ---------- */
+/* ---------- フローティング ---------- */
 #page-top {
 	position: fixed;
 	width: 60px;
@@ -922,14 +922,14 @@ footer {
 	bottom: 5px;
 	z-index: 9999;
 }
-/* ---------- aimeé¸æŠž ---------- */
+/* ---------- aime選択 ---------- */
 .charge_aime_block {
 	background: #ffec74;
 	border-radius: 5px;
 	box-shadow: 1px 3px 0px rgba(0, 0, 0, 0.4);
 	border: 2px solid #000;
 }
-/* ---------- ãŠçŸ¥ã‚‰ã› ---------- */
+/* ---------- お知らせ ---------- */
 .btn_news {
 	position: absolute;
 	top: -33px;
@@ -943,7 +943,7 @@ footer {
 .btn_news_on, .btn_info_on {
 	top: -44px;
 }
-/* ---------- ãƒ¦ãƒ¼ã‚¶ãƒ‡ãƒ¼ã‚¿ ---------- */
+/* ---------- ユーザデータ ---------- */
 .trophy_block {
 	width: 268px;
 	height: 25px;
@@ -959,9 +959,9 @@ footer {
 	overflow: hidden;
 	color: #fff;
 	text-shadow:
-		black 1px 1px 0, black -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/
-		black -1px 1px 0, black 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/
-		black 0px 1px 0, black  0-1px 0,/*å³ã€å·¦*/
+		black 1px 1px 0, black -1px -1px 0,/*右下、左上*/
+		black -1px 1px 0, black 1px -1px 0,/*右上、左下*/
+		black 0px 1px 0, black  0-1px 0,/*右、左*/
 		black -1px 0 0, black 1px 0 0;
 }
 .trophy_Normal {
@@ -1013,7 +1013,7 @@ footer {
 	background: #dcf3ff;
 	border-radius: 10px;
 }
-/* ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚³ãƒ¡ãƒ³ãƒˆè©³ç´°/ç°¡æ˜“è¡¨ç¤º */
+/* ユーザーコメント詳細/簡易表示 */
 .grad-wrap {
 	position: relative;
 	padding-bottom: 30px;
@@ -1035,7 +1035,7 @@ footer {
 	cursor: pointer;
 }
 .grad-trigger::after {
-	content: "è©³ç´°è¡¨ç¤º"
+	content: "詳細表示"
 }
 .grad-trigger:hover {
 	text-decoration: underline;
@@ -1065,7 +1065,7 @@ footer {
 	background: linear-gradient(top, rgba(220,243,255,0) 0%, rgba(220,243,255,0.9) 50%, rgba(220,243,255,0.9) 50%, #dcf3ff 100%);
 }
 .grad-trigger.is-show::after {
-	content: "ç°¡æ˜“è¡¨ç¤º"
+	content: "簡易表示"
 }
 .grad-trigger.is-show .fa {
 	transform: rotate(180deg);
@@ -1135,7 +1135,7 @@ footer {
 		transform: rotate(360deg);
 	}
 }
-/* ---------- ãƒ›ãƒ¼ãƒ  ---------- */
+/* ---------- ホーム ---------- */
 .home_info {
 	position: absolute;
 	top: 167px;
@@ -1153,7 +1153,7 @@ footer {
 	left: 280px;
 	width: 103px;
 }
-/* ---------- ã‚­ãƒ£ãƒ³ãƒšãƒ¼ãƒ³ ---------- */
+/* ---------- キャンペーン ---------- */
 .campaign_img_block {
 	width: 200px;
 	margin: 0 auto;
@@ -1174,7 +1174,7 @@ footer {
 	right: 18px;
 	line-height: 20px;
 	color: #ff6d51;
-	text-shadow: white 1px 1px 0, white -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/ white -1px 1px 0, white 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/ white 0px 1px 0, white 0-1px 0,/*å³ã€å·¦*/ white -1px 0 0, white 1px 0 0;
+	text-shadow: white 1px 1px 0, white -1px -1px 0,/*右下、左上*/ white -1px 1px 0, white 1px -1px 0,/*右上、左下*/ white 0px 1px 0, white 0-1px 0,/*右、左*/ white -1px 0 0, white 1px 0 0;
 }
 .campaign_code_block {
 	padding: 10px;
@@ -1213,7 +1213,7 @@ footer {
 	margin-right: 5px;
 }
 
-/* ---------- å¤§ä¼š ---------- */
+/* ---------- 大会 ---------- */
 .entry_block {
 	background: #ffec74;
 	border-radius: 5px;
@@ -1304,7 +1304,7 @@ footer {
 	width: 127px;
 	font-size: 12px;
 	color: #fff;
-	text-shadow: black 1px 1px 0, black -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/ black -1px 1px 0, black 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/ black 0px 1px 0, black 0-1px 0,/*å³ã€å·¦*/ black -1px 0 0, black 1px 0 0;
+	text-shadow: black 1px 1px 0, black -1px -1px 0,/*右下、左上*/ black -1px 1px 0, black 1px -1px 0,/*右上、左下*/ black 0px 1px 0, black 0-1px 0,/*右、左*/ black -1px 0 0, black 1px 0 0;
 }
 .finale_user_block {
 	position: relative;
@@ -1329,7 +1329,7 @@ footer {
 	white-space: nowrap;
 	overflow: hidden;
 	color: #fff;
-	text-shadow: black 1px 1px 0, black -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/ black -1px 1px 0, black 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/ black 0px 1px 0, black 0-1px 0,/*å³ã€å·¦*/ black -1px 0 0, black 1px 0 0;
+	text-shadow: black 1px 1px 0, black -1px -1px 0,/*右下、左上*/ black -1px 1px 0, black 1px -1px 0,/*右上、左下*/ black 0px 1px 0, black 0-1px 0,/*右、左*/ black -1px 0 0, black 1px 0 0;
 }
 .finale_grade {
 	position: absolute;
@@ -1343,7 +1343,7 @@ footer {
 	left: 9px;
 	font-size: 14px;
 	color: #fff;
-	text-shadow: black 1px 1px 0, black -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/ black -1px 1px 0, black 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/ black 0px 1px 0, black 0-1px 0,/*å³ã€å·¦*/ black -1px 0 0, black 1px 0 0;
+	text-shadow: black 1px 1px 0, black -1px -1px 0,/*右下、左上*/ black -1px 1px 0, black 1px -1px 0,/*右上、左下*/ black 0px 1px 0, black 0-1px 0,/*右、左*/ black -1px 0 0, black 1px 0 0;
 }
 .finale_rating {
 	position: absolute;
@@ -1351,7 +1351,7 @@ footer {
 	left: 9px;
 	font-size: 12px;
 	color: #fff;
-	text-shadow: black 1px 1px 0, black -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/ black -1px 1px 0, black 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/ black 0px 1px 0, black 0-1px 0,/*å³ã€å·¦*/ black -1px 0 0, black 1px 0 0;
+	text-shadow: black 1px 1px 0, black -1px -1px 0,/*右下、左上*/ black -1px 1px 0, black 1px -1px 0,/*右上、左下*/ black 0px 1px 0, black 0-1px 0,/*右、左*/ black -1px 0 0, black 1px 0 0;
 }
 .finale_point_block {
 	position: absolute;
@@ -1458,7 +1458,7 @@ footer {
 	box-shadow: 1px 3px 0px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
 }
-/* ---------- è¨­å®šå¤‰æ›´ ---------- */
+/* ---------- 設定変更 ---------- */
 .set_symbol_btn {
 	width: 32px;
 	height: 32px;
@@ -1518,7 +1518,7 @@ footer {
     font-weight: bold;
     padding: 6px 10px;
 }
-/* ---------- ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒ‡ãƒ¼ã‚¿ ---------- */
+/* ---------- プレイヤーデータ ---------- */
 .playerdata_back {
 	position: absolute;
 	right: 11px;
@@ -1566,7 +1566,7 @@ footer {
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 }
-/* ---------- ã§ã‚‰ã£ãã™ãƒ‘ã‚¹ ---------- */
+/* ---------- でらっくすパス ---------- */
 .pass_block {
 	position: relative;
 	background: url(../img/back_star_01.png) no-repeat bottom;
@@ -1596,7 +1596,7 @@ footer {
 	top: -10px;
 	right: 1px;
 }
-/* ---------- ãƒã‚±ãƒƒãƒˆ ---------- */
+/* ---------- チケット ---------- */
 .ticket_title {
 	top: 22px;
 	left: 60px;
@@ -1612,7 +1612,7 @@ footer {
 	left: 60px;
 	width: 330px;
 }
-/* ---------- å…¨å›½è¡Œè„š ---------- */
+/* ---------- 全国行脚 ---------- */
 .region_map_container {
 	display: block;
 	position: relative;
@@ -1678,7 +1678,7 @@ footer {
 	top: 50px;
 	left: 40px;
 }
-/* ---------- ã™ãŸã‚“ã·ã‚«ãƒ¼ãƒ‰ ---------- */
+/* ---------- すたんぷカード ---------- */
 .btn_type_partner {
 	position: absolute;
 	top: -47px;
@@ -1851,7 +1851,7 @@ footer {
 	right: 20px;
 	width: 68px;
 }
-/* ---------- ãƒ•ãƒ¬ãƒ³ãƒ‰ ---------- */
+/* ---------- フレンド ---------- */
 .friend_favorite_icon {
 	position: absolute;
 	top: -10px;
@@ -1921,7 +1921,7 @@ footer {
 .twitter_icon {
 	border-radius: 50px;
 }
-/* ---------- ãƒ—ãƒ¬ã‚¤å±¥æ­´ ---------- */
+/* ---------- プレイ履歴 ---------- */
 .playlog_top_container {
 	height: 34px;
 	line-height: 35px;
@@ -2010,9 +2010,9 @@ footer {
 	font-size: 29px;
 	color: #fff;
 	text-shadow:
-		black 1px 1px 0, black -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/
-		black -1px 1px 0, black 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/
-		black 0px 1px 0, black  0-1px 0,/*å³ã€å·¦*/
+		black 1px 1px 0, black -1px -1px 0,/*右下、左上*/
+		black -1px 1px 0, black 1px -1px 0,/*右上、左下*/
+		black 0px 1px 0, black  0-1px 0,/*右、左*/
 		black -1px 0 0, black 1px 0 0;
 }
 .playlog_achievement_newrecord {
@@ -2197,7 +2197,7 @@ footer {
 	height: 16px;
 }
 
-/* ---------- æ®µä½èªå®š ---------- */
+/* ---------- 段位認定 ---------- */
 .course_mode_back {
 	background-repeat: repeat-y;
 	background-size: contain;
@@ -2240,9 +2240,9 @@ footer {
 	font-size: 29px;
 	color: #fcc400;
 	text-shadow:
-		black 1px 1px 0, black -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/
-		black -1px 1px 0, black 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/
-		black 0px 1px 0, black  0-1px 0,/*å³ã€å·¦*/
+		black 1px 1px 0, black -1px -1px 0,/*右下、左上*/
+		black -1px 1px 0, black 1px -1px 0,/*右上、左下*/
+		black 0px 1px 0, black  0-1px 0,/*右、左*/
 		black -1px 0 0, black 1px 0 0;
 }
 .course_deluxscore_txt {
@@ -2272,7 +2272,7 @@ footer {
 	top: 2px;
 	right: 6px;
 }
-/* ---------- æ¥½æ›²åˆ¥ãƒ¬ã‚³ãƒ¼ãƒ‰ ---------- */
+/* ---------- 楽曲別レコード ---------- */
 .music_scorelist_table tr {
 	border-bottom: 1px solid #fff;
 }
@@ -2443,7 +2443,7 @@ footer {
 .music_basic_btn {
 	position: relative;
 	background: radial-gradient(#6fe163 50%, #51ce44);
-	text-shadow: #22bb5b 1px 1px 0, #22bb5b -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/ #22bb5b -1px 1px 0, #22bb5b 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/ #22bb5b 0px 1px 0, #22bb5b 0-1px 0,/*å³ã€å·¦*/ #22bb5b -1px 0 0, #22bb5b 1px 0 0;
+	text-shadow: #22bb5b 1px 1px 0, #22bb5b -1px -1px 0,/*右下、左上*/ #22bb5b -1px 1px 0, #22bb5b 1px -1px 0,/*右上、左下*/ #22bb5b 0px 1px 0, #22bb5b 0-1px 0,/*右、左*/ #22bb5b -1px 0 0, #22bb5b 1px 0 0;
 	border: 2px solid #000;
 	box-shadow: 1px 3px 0px #025235;
 	border-radius: 5px;
@@ -2451,7 +2451,7 @@ footer {
 .music_advanced_btn {
 	position: relative;
 	background: radial-gradient(#ffd653 50%, #fab41b);
-	text-shadow: #fb9c2d 1px 1px 0, #fb9c2d -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/ #fb9c2d -1px 1px 0, #fb9c2d 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/ #fb9c2d 0px 1px 0, #fb9c2d 0-1px 0,/*å³ã€å·¦*/ #fb9c2d -1px 0 0, #fb9c2d 1px 0 0;
+	text-shadow: #fb9c2d 1px 1px 0, #fb9c2d -1px -1px 0,/*右下、左上*/ #fb9c2d -1px 1px 0, #fb9c2d 1px -1px 0,/*右上、左下*/ #fb9c2d 0px 1px 0, #fb9c2d 0-1px 0,/*右、左*/ #fb9c2d -1px 0 0, #fb9c2d 1px 0 0;
 	border: 2px solid #c7450c;
 	box-shadow: 1px 3px 0px #c7450c;
 	border-radius: 5px;
@@ -2459,7 +2459,7 @@ footer {
 .music_expert_btn {
 	position: relative;
 	background: radial-gradient(#ff828e 50%, #f55a70);
-	text-shadow: #f64861 1px 1px 0, #f64861 -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/ #f64861 -1px 1px 0, #f64861 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/ #f64861 0px 1px 0, #f64861 0-1px 0,/*å³ã€å·¦*/ #f64861 -1px 0 0, #f64861 1px 0 0;
+	text-shadow: #f64861 1px 1px 0, #f64861 -1px -1px 0,/*右下、左上*/ #f64861 -1px 1px 0, #f64861 1px -1px 0,/*右上、左下*/ #f64861 0px 1px 0, #f64861 0-1px 0,/*右、左*/ #f64861 -1px 0 0, #f64861 1px 0 0;
 	border: 2px solid #c02138;
 	box-shadow: 1px 3px 0px #c02138;
 	border-radius: 5px;
@@ -2467,7 +2467,7 @@ footer {
 .music_master_btn {
 	position: relative;
 	background: radial-gradient(#c27ff4 50%, #a85ce0);
-	text-shadow: #9e45e2 1px 1px 0, #9e45e2 -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/ #9e45e2 -1px 1px 0, #9e45e2 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/ #9e45e2 0px 1px 0, #9e45e2 0-1px 0,/*å³ã€å·¦*/ #9e45e2 -1px 0 0, #9e45e2 1px 0 0;
+	text-shadow: #9e45e2 1px 1px 0, #9e45e2 -1px -1px 0,/*右下、左上*/ #9e45e2 -1px 1px 0, #9e45e2 1px -1px 0,/*右上、左下*/ #9e45e2 0px 1px 0, #9e45e2 0-1px 0,/*右、左*/ #9e45e2 -1px 0 0, #9e45e2 1px 0 0;
 	border: 2px solid #67148d;
 	box-shadow: 1px 3px 0px #67148d;
 	border-radius: 5px;
@@ -2475,7 +2475,7 @@ footer {
 .music_remaster_btn {
 	position: relative;
 	background: radial-gradient(#e5ddea 50%, #dccce6);
-	text-shadow: #9e45e2 1px 1px 0, #9e45e2 -1px -1px 0,/*å³ä¸‹ã€å·¦ä¸Š*/ #9e45e2 -1px 1px 0, #9e45e2 1px -1px 0,/*å³ä¸Šã€å·¦ä¸‹*/ #9e45e2 0px 1px 0, #9e45e2 0-1px 0,/*å³ã€å·¦*/ #9e45e2 -1px 0 0, #9e45e2 1px 0 0;
+	text-shadow: #9e45e2 1px 1px 0, #9e45e2 -1px -1px 0,/*右下、左上*/ #9e45e2 -1px 1px 0, #9e45e2 1px -1px 0,/*右上、左下*/ #9e45e2 0px 1px 0, #9e45e2 0-1px 0,/*右、左*/ #9e45e2 -1px 0 0, #9e45e2 1px 0 0;
 	border: 2px solid #8c2cd5;
 	box-shadow: 1px 3px 0px #8c2cd5;
 	border-radius: 5px;
@@ -2500,7 +2500,7 @@ footer {
 .music_detail_table td:nth-child(4) {
 	width: 100px;
 }
-/* ---------- ã¡ã»ãƒ¼ ---------- */
+/* ---------- ちほー ---------- */
 .map_img_block {
 	background: url(../img/back_map.png) bottom no-repeat;
 	background-size: 175px 130px;
@@ -2736,7 +2736,7 @@ footer {
 	right: 9px;
 	height: 24px;
 }
-/* ---------- ã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ ---------- */
+/* ---------- コレクション ---------- */
 .collection_setting_block {
 	border: 2px solid #ffa200;
 }
@@ -2984,7 +2984,7 @@ footer {
 		background: #ffa500;
 	}
 }
-/* ---------- ãƒ©ãƒ³ã‚­ãƒ³ã‚° ---------- */
+/* ---------- ランキング ---------- */
 .ranking_title_block {
 	width: 450px;
 	margin: 5px 15px 0 15px;
